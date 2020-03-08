@@ -66,3 +66,21 @@
 - 그리고 함수안에서 변수를 업데이트 한다.
 - return 을 적어주면 알아서 해당 변수를 리턴해준다.
 - defer는 함수가 끝난뒤에 실행된다.
+
+### For, range
+
+- ```
+  func superAdd(numbers ...int) int {
+    	total := 0
+    	for _, number := range numbers {
+    		total += number
+    	}
+    	return total
+  }
+
+  func main() {
+  	fmt.Println(superAdd(1, 2, 3, 4, 5, 6, 7))
+  }
+  ```
+
+- for 에서 첫번째 인자는 Index라서 underScore로 ignore시킴.
