@@ -5,18 +5,14 @@ import (
 	"strings"
 )
 
-func lenAndUpper(name string) (int, string) {
-	return len(name), strings.ToUpper(name)
-}
-
-func consoleLogging(name ...string) {
-	fmt.Println(name)
+func lenAndUpper(name string) (length int, upper string) {
+	defer fmt.Println("It's Done")
+	length = len(name)
+	upper = strings.ToUpper(name)
+	return
 }
 
 func main() {
 	totalLen, uppername := lenAndUpper("Someting")
-	totalLength, _ := lenAndUpper("sssssssss")
-	fmt.Println(totalLen, uppername, totalLength)
-
-	consoleLogging("super", "suppppper", "many", "arguments")
+	fmt.Println(totalLen, uppername)
 }
