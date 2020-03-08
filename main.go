@@ -1,15 +1,22 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
+
+func lenAndUpper(name string) (int, string) {
+	return len(name), strings.ToUpper(name)
+}
+
+func consoleLogging(name ...string) {
+	fmt.Println(name)
+}
 
 func main() {
-	const name string = "hello"
+	totalLen, uppername := lenAndUpper("Someting")
+	totalLength, _ := lenAndUpper("sssssssss")
+	fmt.Println(totalLen, uppername, totalLength)
 
-	var studying bool = true
-	studying = false
-
-	shortcut := "good"
-	shortcut = "excellent"
-
-	fmt.Println(name, studying, shortcut)
+	consoleLogging("super", "suppppper", "many", "arguments")
 }
