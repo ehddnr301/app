@@ -84,3 +84,21 @@
   ```
 
 - for 에서 첫번째 인자는 Index라서 underScore로 ignore시킴.
+
+### if문
+
+- ```
+  func canIDrink(age int) bool {
+    	if kAge := age + 2; kAge < 20 {
+    		return false
+    	}
+    	return true
+  }
+
+  func main() {
+  	fmt.Println(canIDrink(20))
+  	fmt.Println(canIDrink(17))
+  }
+  ```
+
+- if문 안에서 변수를 생성할수있다.
