@@ -3,5 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello World")
+	const name string = "hello"
+
+	var studying bool = true
+	studying = false
+
+	shortcut := "good"
+	shortcut = "excellent"
+
+	fmt.Println(name, studying, shortcut)
 }
