@@ -174,3 +174,16 @@
 - slice에 추가하려면 append를 사용해야한다.
 - append는 첫번째로 slice, 두번째로 추가할것 을 받는다.
 - append는 새로운 slice를 리턴한다.
+
+### map
+
+- ```
+  func main() {
+  	superman := map[string]string{"name": "super", "age": "12"}
+  	for key, value := range superman {
+  		fmt.Println(key, value)
+  	}
+  }
+  ```
+- map 은 object같은것인데 key의 데이터타입과 value의 데이터 타입을 적어줘야한다.
+- for range도 사용가능하다.
