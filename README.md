@@ -157,3 +157,20 @@
 - a는 3
 
 - 요약 : `*`는 메모리 주소에 저장된 값 `&`는 메모리 주소
+
+### array, slice
+
+- ```
+    func main() {
+    	names := [5]string{"as", "ax", "ew"}
+    	supers := []string{"as123", "ax123", "ew123"}
+    	supers = append(supers, "superman")
+    	fmt.Println(names, supers)
+    }
+  ```
+
+- array는 기본적으로 길이를 제한해 주어야 한다.
+- 제한없는 array를 slice라고 부른다.
+- slice에 추가하려면 append를 사용해야한다.
+- append는 첫번째로 slice, 두번째로 추가할것 을 받는다.
+- append는 새로운 slice를 리턴한다.
