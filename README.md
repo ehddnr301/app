@@ -187,3 +187,23 @@
   ```
 - map 은 object같은것인데 key의 데이터타입과 value의 데이터 타입을 적어줘야한다.
 - for range도 사용가능하다.
+
+### structs
+
+- ```
+    type person struct {
+    	name    string
+    	age     int
+    	favFood []string
+    }
+
+    func main() {
+    	favFood := []string{"kimchi", "삼겹살"}
+    	superman := person{"suuper", 23, favFood}
+    	batman := person{name: "baat", age: 50, favFood: favFood}
+    	fmt.Println(superman, batman)
+    }
+  ```
+
+- struct 가 object와 class 같은 것인데 value타입을 다르게 적어줄수있다.
+- batman과 같은 방법을 쓰는것이 가독성이 좋다.
